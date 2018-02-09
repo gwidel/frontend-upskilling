@@ -3,13 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>The brand with flex</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 	<link href="styles/style-flex.css" rel="stylesheet" type="text/css">	
   </head>
   <body class="Layout">
 		<header class="Layout-header TopNav">
-			<div class="u-content u-center">			
+			<nav class="u-content u-center">			
 				<ul class="TopNav-menu">
 					<li class="TopNav-currency">
 						<label>Currency : </label>
@@ -25,18 +24,19 @@
 						<a href=""><i class="fas fa-shopping-cart"></i> empty <i class="fa fa-chevron-down"></i></a>
 					</li>
 				</ul>
-			</div>		
+			</nav>		
 		</header>
 		
 		<nav class="Navigation">
-			<img src="images/logo.png" width="237" height="19" class="logo" />
-			<div class="Navigation-menu u-content u-center">
+			<img src="images/logo.png" class="Navigation-logo" />
+			<nav class="Navigation-menu u-content u-center">
 				<ul>
 					<li class="Navigation-dropdown"><a href="">Mens <i class="fa fa-chevron-down"></i></a>
 						<div class="Navigation-dropdownContent">						
 							<div class="Navigation-submenuContent">
 								<div>
-									<h4 class="u-h4">casuals</h4>
+									<h4 class="TextHeader">casuals</h4>
+									<nav>
 									<ul>
 										<li><a href="">Jackets</a></li>
 										<li><a href="">Hoodies & sweatshirts</a></li>
@@ -45,15 +45,18 @@
 										<li><a href="">Trousers & Chinos</a></li>
 										<li><a href="">T-shirts</a></li>
 									</ul>						
+									</nav>
 								</div>
 								<div>
-									<h4 class="u-h4">Formal</h4>
+									<h4 class="TextHeader">Formal</h4>
+									<nav>
 									<ul>
 										<li><a href="">Jackets</a></li>
 										<li><a href="">Shirts</a></li>
 										<li><a href="">Suits</a></li>
 										<li><a href="">Trousers</a></li>
-									</ul>						
+									</ul>
+									</nav>									
 								</div>								
 							</div>
 							<div class="Navigation-submenuSale">
@@ -66,7 +69,7 @@
 					<li><a href="">Local stores</a></li>
 					<li><a href="">Look book</a></li>
 				</ul>					
-			</div>
+			</nav>
 			
 			<div class="Navigation-search">  
 				<input placeholder="Search...">
@@ -77,8 +80,8 @@
 		<section class="Intro">
 			<div class="Intro-overlay">
 				<div class="Intro-slogan u-content u-center">
-					<h1 class="u-h1">The <span class="u-slimFont">brand</span></h1>
-					<h2 class="u-h2">Company slogan goes here</h2>
+					<h1 class="TextHeader">The <span class="u-slimFont">brand</span></h1>
+					<h2 class="TextHeader">Company slogan goes here</h2>
 				</div>
 			</div>		
 		</section>
@@ -87,19 +90,19 @@
 				<div class="MainSection-column">
 					<img class="MainSection-image" src="./images/image1.jpg"  />
 					<img class="MainSection-image" src="./images/image2.jpg"  />
-					<h3 class="u-h3">Our values, vision and strategy</h3>
-					<h4 class="u-h4">The above image would be a great place for an advertising video</h4>
+					<h3 class="TextHeader">Our values, vision and strategy</h3>
+					<h4 class="TextHeader">The above image would be a great place for an advertising video</h4>
 					<p class="u-paragraph">Lorem ipsum dolor sit amet, doctus efficiantur ad duo, legendos pertinax nominati his in. At justo summo iuvaret mel, usu ea scripta euismod principes, ut has liber option. 
 					Ferri tibique sed ad, te primis labore cetero sit, suscipit voluptatum te mea. Ea mundi <a href="#" class="u-link">eligendi salutandi vix</a>. Ex pri munere verear, aeque atomorum ut sit.</p>				
 					</div>
 				<div class="MainSection-column">
-					<h3 class="u-h3 u-topMargin-60">Hand designed clothing</h3>
-					<h4 class="u-h4">Established in 2013, avenue fashion sed dictum  elit vel sapien luctus eras</h4>
+					<h3 class="TextHeader u-topMargin-60">Hand designed clothing</h3>
+					<h4 class="TextHeader">Established in 2013, avenue fashion sed dictum  elit vel sapien luctus eras</h4>
 					<p class="u-paragraph">Lorem ipsum dolor sit amet, doctus efficiantur ad duo, legendos pertinax nominati his in. At justo summo iuvaret mel, usu ea scripta euismod principes, ut has liber option. 
 					Ferri tibique sed ad, te primis labore cetero sit, suscipit voluptatum te mea. Ea mundi eligendi salutandi vix. Ex pri munere verear, aeque atomorum ut sit.</p>
 					<img class="MainSection-image" src="./images/image3.jpg"  />
-					<h3 class="u-h3">Ethical trading</h3>
-					<h4 class="u-h4">We oversee the working conditions of the people in the supply chain</h4>
+					<h3 class="TextHeader">Ethical trading</h3>
+					<h4 class="TextHeader">We oversee the working conditions of the people in the supply chain</h4>
 					<p class="u-paragraph">Lorem ipsum dolor sit amet, doctus efficiantur ad duo, legendos pertinax nominati his in. At justo summo iuvaret mel, usu ea scripta euismod principes, ut has liber option. 
 					Ferri tibique sed ad, te primis labore cetero sit, suscipit voluptatum te mea. Ea mundi eligendi salutandi vix. Ex pri munere verear, aeque <a href="#" class="u-link">A Link &#8594;</a></p>
 					<div class="MainSection-copy">
@@ -113,7 +116,8 @@
 		<footer class="FooterNav">
 			<div class="FooterNav-content u-content u-center">
 				<div class="FooterNav-menu">
-					<h4 class="u-h4">Information</h4>
+					<h4 class="TextHeader">Information</h4>
+					<nav>
 					<ul>
 						<li><a href="">The brand</a></li>
 						<li><a href="">Local stores</a></li>
@@ -121,9 +125,11 @@
 						<li><a href="">Privacy & cookies</a></li>
 						<li><a href="">Sitemap</a></li>
 					</ul>
+					</nav>
 				</div>
 				<div class="FooterNav-menu">
-					<h4 class="u-h4">Why buy from us</h4>
+					<h4 class="TextHeader">Why buy from us</h4>
+					<nav>
 					<ul>
 						<li><a href="">Shipping & returns</a></li>
 						<li><a href="">Secure shipping</a></li>
@@ -131,9 +137,11 @@
 						<li><a href="">Award winning</a></li>
 						<li><a href="">Ethical trading</a></li>
 					</ul>
+					</nav>
 				</div>
 				<div class="FooterNav-menu">
-					<h4 class="u-h4">Your account</h4>
+					<h4 class="TextHeader">Your account</h4>
+					<nav>
 					<ul>
 						<li><a href="">Sign in</a></li>
 						<li><a href="">Register</a></li>
@@ -142,9 +150,11 @@
 						<li><a href="">Track an order</a></li>
 						<li><a href="">Update information</a></li>
 					</ul>
+					</nav>
 				</div>
 				<div class="FooterNav-menu">
-					<h4 class="u-h4">Lookbook</h4>
+					<h4 class="TextHeader">Lookbook</h4>
+					<nav>
 					<ul>
 						<li><a href="">Lateset posts</a></li>
 						<li><a href="">Men's lookbook</a></li>
@@ -153,9 +163,10 @@
 						<li><a href="">View your lookbook</a></li>
 						<li><a href="">Delete your lookbook</a></li>
 					</ul>
+					</nav>
 				</div>
 				<div class="FooterNav-menu">
-					<h4 class="u-h4">Contact details</h4>
+					<h4 class="TextHeader">Contact details</h4>
 					<div class="FooterNav-address">
 						Head office: Avenue Fashion<br/>
 						180-182 regent Street, London

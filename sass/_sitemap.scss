@@ -1,0 +1,37 @@
+@import "mixins";
+
+.Sitemap {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 60px 0;
+
+	&-links {
+		
+		width: 20%;
+		
+		h3 {
+			font-family: $mainFontFamily;
+			color:  #151515;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 26px;
+			text-align: left;
+			text-transform: uppercase;
+		}
+		ul {
+			padding: 0;
+			margin: 0;	
+			list-style-type: none;	
+		}
+		a { 
+			@include italic-text;
+			color:  #565656;
+			text-decoration: none;
+		}
+		p {
+			@include italic-text;
+			color:  #575757;
+		}
+	}	
+}

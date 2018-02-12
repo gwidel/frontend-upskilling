@@ -26,10 +26,7 @@ module.exports = {
             {
                 test: /\.(html)$/,
                 use: {
-                    loader: 'html-loader',
-                    options: {
-                        attrs: [':data-webpack']
-                    }
+                    loader: 'html-loader'
                 }
             },
             {
@@ -67,10 +64,7 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html'
-        }),
-		new CopyWebpackPlugin([
-            {from:'src/images',to:'images'}, {from:'src/fonts',to:'fonts'}, {from:'src/css',to:'css'}
-        ]),        
+        }),        
         extractSass
     ]
 };

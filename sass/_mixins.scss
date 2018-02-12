@@ -1,0 +1,8 @@
+@mixin italic-text {
+	font-family: $sheriffFontFamily;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 26px;
+	text-align: left;
+}
+
